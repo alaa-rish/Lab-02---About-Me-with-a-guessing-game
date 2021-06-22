@@ -1,0 +1,59 @@
+header{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: yellow;
+    margin-top: 30px;
+    margin-bottom: 30px ;
+
+
+}
+
+h1{
+font-weight: 700;
+font-size: 30pt;
+
+
+}
+
+
+.main{
+    text-align: center;
+
+
+
+}
+
+h2{
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: violet;
+    margin-top: 40px;
+
+}
+
+article{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+p{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-align: center;
+
+
+
+
+}
+
+#sc{
+background-color: yellowgreen;
+margin-top: 40px;
+
+}
+
