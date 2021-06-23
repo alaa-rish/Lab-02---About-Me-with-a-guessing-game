@@ -2,7 +2,7 @@
 
 let userName = prompt('What is your name?').toUpperCase();
 console.log('welcome' + userName);
-document.write('<p> Thank you for visiting my website ' +userName);
+document.write('<p> Thank you for visiting my website ' + userName);
 
 
 
@@ -24,4 +24,70 @@ default:
   document.write('<p id="ADMIN">sorry you didn\'t pick who i\'m</p>');
   break;
 
+}
+
+
+let q3 = prompt('Do you know from where am i? y/n').toLowerCase();
+switch (q3) {
+case 'y':
+  alert('Good, move to the next quastion');
+  break;
+case 'n':
+  alert('guss from where in the next quastion');
+  break;
+default:
+  alert('please answer with y or n');
+  break;
+}
+
+
+let q4 = prompt('Am i from Amman? y/n').toLowerCase();
+switch (q4) {
+case 'y':
+  alert('Good');
+  break;
+case 'n':
+  alert('Wrong');
+  break;
+default:
+  alert('please answer with y or n');
+  break;
+}
+let q5 = prompt('What is my last name? (AbuRish or Rish)?').toLowerCase();
+switch (q5) {
+case 'aburish':
+  alert('Good');
+  break;
+case 'rish':
+  alert('Wrong');
+  break;
+default:
+  alert('You should answer');
+  break;
+}
+let num = 7;
+for (let i = 1; i <= 9; i++) {
+  let x = Number(prompt('What is my Favorite Number? 1-10'));
+  if (x > num) {
+    alert('try again');
+  }
+  else if (x < num) {
+    alert('try again');
+  }
+  else {
+    alert('Correct, My Favorite Number is 7');
+    break;
+  }
+}
+
+let countries = ['jordan', 'turkey', 'germany', 'japan'];
+for (let attempt = 1; attempt <= 6; attempt++){
+  let q0 = prompt('Do you know where i\'m going?').toLowerCase();
+  for (let i = 0; i < countries.length; i++) {
+    if (q0 === countries[i]){
+      alert('Correct, On my way to this countrie');
+      attempt = 9;
+      break;
+    }
+  }
 }
