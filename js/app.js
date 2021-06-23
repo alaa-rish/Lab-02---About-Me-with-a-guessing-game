@@ -1,12 +1,10 @@
 'use strict';
-
+let score= 0;
 let userName = prompt('What is your name?').toUpperCase();
 console.log('welcome' + userName);
 document.write('<p> Thank you for visiting my website ' + userName);
 
 function first(){
-
-
 
   let userType = prompt('Guess who i\'m (Ala/Ahmad)?').toUpperCase();
   switch (userType) {
@@ -36,6 +34,7 @@ function second(){
   switch (q3) {
   case 'y':
     alert('Good, move to the next quastion');
+    score++;
     break;
   case 'n':
     alert('guss from where in the next quastion');
@@ -52,6 +51,7 @@ function third(){
   switch (q4) {
   case 'y':
     alert('Good');
+    score++;
     break;
   case 'n':
     alert('Wrong');
@@ -67,6 +67,7 @@ function fourth(){
   switch (q5) {
   case 'aburish':
     alert('Good');
+    score++;
     break;
   case 'rish':
     alert('Wrong');
@@ -89,21 +90,20 @@ function fifth(){
     }
     else {
       alert('Correct, My Favorite Number is 7');
+      score++;
       break;
     }
   }
 }
 fifth();
 function sixth(){
-
-
-
   let countries = ['jordan', 'turkey', 'germany', 'japan'];
   for (let attempt = 1; attempt <= 6; attempt++){
-    let q0 = prompt('Do you know where i\'m going?').toLowerCase();
+    let q0 = prompt('Do you know where i\'m going? (Jordan, Turkey, Germany, Japan)').toLowerCase();
     for (let i = 0; i < countries.length; i++) {
       if (q0 === countries[i]){
         alert('Correct, On my way to this countrie');
+        score++;
         attempt = 9;
         break;
       }
@@ -111,3 +111,4 @@ function sixth(){
   }
 }
 sixth();
+alert('you answered '+score+' out of 6 quastions');
