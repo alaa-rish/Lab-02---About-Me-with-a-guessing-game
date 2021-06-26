@@ -112,34 +112,44 @@ birth();
 
 function fifth(){
   let num = 7;
-  for (let i = 1; i <= 9; i++) {
+  let notCorrect = true;
+  for (let i = 1; i <= 4; i++) {
     let x = Number(prompt('What is my Favorite Number? 1-10'));
     if (x > num) {
-      alert('try again');
+      alert('too high');
     }
     else if (x < num) {
-      alert('try again');
+      alert('too low');
     }
     else {
+      notCorrect=false;
       alert('Correct, My Favorite Number is 7');
       score++;
       break;
     }
   }
+  if(notCorrect) {
+    alert('My Favorite Number is 7');
+  }
 }
 fifth();
 function sixth(){
-  let countries = ['jordan', 'turkey', 'germany', 'japan'];
+  let countries = ['jordan', 'turkey', 'germany'];
+  let notCorrect = true;
   for (let attempt = 1; attempt <= 6; attempt++){
-    let q0 = prompt('Do you know where i\'m going? (Jordan, Turkey, Germany, Japan)').toLowerCase();
+    let q0 = prompt('Do you know where i\'m going? (Jordan, Turkey, Germany, Japan, KSA, Egypt)').toLowerCase();
     for (let i = 0; i < countries.length; i++) {
       if (q0 === countries[i]){
-        alert('Correct, On my way to this countrie');
+        alert('Correct, correct possible answers are (Jordan, Turkey, Germany)');
         score++;
+        notCorrect = false;
         attempt = 9;
         break;
       }
     }
+  }
+  if(notCorrect) {
+    alert('Correct possible answers are (Jordan, Turkey, Germany)');
   }
 }
 sixth();
